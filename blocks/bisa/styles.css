@@ -1,0 +1,7 @@
+.bisa_block_img,
+.bisa_block_img > a > img {
+  width: 100%;
+  object-fit: scale-down;
+  margin: 1px 0;
+  padding: 1px 0;
+}

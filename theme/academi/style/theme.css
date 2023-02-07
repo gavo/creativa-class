@@ -4475,3 +4475,25 @@ body.limitedwidth.pagelayout-frontpage #page.drawers .main-inner {
     overflow: overlay;
     object-fit: scale-down;
 }
+
+
+/*Bisa*/
+.bisa_img_maletin {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .bisa_wrap_card {
+    width: 300px;
+    text-align: center;
+    margin: 25px;
+    max-width: 300px;
+    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
