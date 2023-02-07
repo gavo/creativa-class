@@ -4497,3 +4497,7 @@ body.limitedwidth.pagelayout-frontpage #page.drawers .main-inner {
     justify-content: flex-start;
     align-items: center;
   }
+
+  .block_textosdigitales > .card-body > .card-text {
+    padding: 0;
+  }
