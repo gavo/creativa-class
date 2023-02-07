@@ -59,8 +59,8 @@ function theme_academi_process_css($css, $theme) {
  * @return void
  */
 function theme_academi_set_brandcolors($css, $theme) {
-    $primarycolor = ($theme->settings->primarycolor ?? '#88b77b') ?: '#88b77b';
-    $secondarycolor = ($theme->settings->secondarycolor ?? '#f60') ?: '#f60';
+    $primarycolor = ($theme->settings->primarycolor ?? '#f29900') ?: '#f29900';
+    $secondarycolor = ($theme->settings->secondarycolor ?? '#7c7b7b') ?: '#7c7b7b';
     $css = str_replace('[[setting:primarycolor]]', $primarycolor, $css);
     $css = str_replace('[[setting:secondarycolor]]', $secondarycolor, $css);
     return $css;

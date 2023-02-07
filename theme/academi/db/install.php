@@ -39,17 +39,19 @@ function xmldb_theme_academi_install() {
     $fs = get_file_storage();
 
     // Slider images.
-        $i = 1;
-        $fs = get_file_storage();
-        $filerecord = new stdClass();
-        $filerecord->component = 'theme_academi';
-        $filerecord->contextid = context_system::instance()->id;
-        $filerecord->userid = get_admin()->id;
-        $filerecord->filearea = 'slide1image';
-        $filerecord->filepath = '/';
-        $filerecord->itemid = 0;
-        $filerecord->filename = 'slide1image.jpg';
-        $fs->create_file_from_pathname($filerecord, $CFG->dirroot . '/theme/academi/pix/home/slide1.jpg');
+        
+        for($i = 1; $i<=3; $i++){
+            $fs = get_file_storage();
+            $filerecord = new stdClass();
+            $filerecord->component = 'theme_academi';
+            $filerecord->contextid = context_system::instance()->id;
+            $filerecord->userid = get_admin()->id;
+            $filerecord->filearea = 'slide'.$i.'image';
+            $filerecord->filepath = '/';
+            $filerecord->itemid = 0;
+            $filerecord->filename = 'slide'.$i.'image.jpg';
+            $fs->create_file_from_pathname($filerecord, $CFG->dirroot . '/theme/academi/pix/home/slide'.$i.'.jpg');
+        }
 
         $fs = get_file_storage();
         $filerecord = new stdClass();

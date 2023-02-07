@@ -949,6 +949,10 @@ select[size] {
         background: var(--color_primary);
         border-color: var(--color_primary);
     }
+    
+    .gvm-div-login > img {
+        display: none;
+    }
 }
 
 @media (min-width: 576px) {
@@ -1548,7 +1552,7 @@ select[size] {
 }
 #footer .footer-main {
     background: var(--dark_gray);
-    padding: 30px 0 54px;
+    padding: 20px 0;
 }
 #footer .footer-main h2 {
     font-weight: bold;
@@ -1573,7 +1577,7 @@ select[size] {
     display: block;
 }
 #footer .footer-main .infoarea .footer-logo a img {
-    width: 100%;
+    width: 100px;
     height: auto;
     max-height: 150px;
     object-fit: contain;
@@ -1656,13 +1660,14 @@ select[size] {
 }
 #footer .footer-bottom {
     background: var(--dark_grey);
-    padding: 20px 0 0;
+    padding: 0 0;
     text-align: center;
 }
 #footer .footer-bottom p {
     color: var(--color_primary);
-    padding-bottom: 20px;
+    padding: 10px 0;
     margin-bottom: 0;
+    font-size: smaller;
 }
 button.btn-footer-popover,
 button.btn-footer-popover:hover,
@@ -1763,8 +1768,8 @@ button.btn-footer-popover:active {
     top: 100%;
 }
 .header-main .navbar-light .navbar-brand.has-logo .logo img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 80px;
     max-height: 150px;
     object-fit: contain;
 }
@@ -3828,7 +3833,7 @@ ul.section li .mod-indent-outer .action-menu .menubar .dropdown .dropdown-menu .
 }
 #page-admin-search .tab-content .tab-pane .list-unstyled li a:hover,
 #page-admin-search .tab-content .tab-pane .list-unstyled li a:focus {
-    color: var(--color_secondary);http://dev.lmsace.com/m40/course/search.php
+    color: var(--color_secondary);
 }
 .moremenu .nav.nav-tabs {
     border-bottom: 0;
@@ -4451,4 +4456,22 @@ body.limitedwidth.pagelayout-frontpage #page.drawers .main-inner {
     left: auto !important;
     right: 0;
     transform: none !important;
+}
+/*Custom*/
+
+.gvm-div-login {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+
+.gvm-div-login > img {
+    block-size: auto;
+    width: auto;
+    height: auto;
+    overflow: overlay;
+    object-fit: scale-down;
 }

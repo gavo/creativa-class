@@ -35,7 +35,7 @@ if (is_siteadmin()) {
     $name = 'theme_academi/primarycolor';
     $title = get_string('primarycolor', 'theme_academi');
     $description = get_string('primarycolor_desc', 'theme_academi');
-    $default = "#88b77b";
+    $default = "#f29900";
     $previewconfig = null;
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);
     $setting->set_updatedcallback('theme_reset_all_caches');
@@ -45,7 +45,7 @@ if (is_siteadmin()) {
     $name = 'theme_academi/secondarycolor';
     $title = get_string('secondarycolor', 'theme_academi');
     $description = get_string('secondarycolor_desc', 'theme_academi');
-    $default = "#f60";
+    $default = "#7c7b7b";
     $previewconfig = null;
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);
     $setting->set_updatedcallback('theme_reset_all_caches');
