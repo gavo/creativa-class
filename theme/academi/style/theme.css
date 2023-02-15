@@ -4501,3 +4501,47 @@ body.limitedwidth.pagelayout-frontpage #page.drawers .main-inner {
   .block_textosdigitales > .card-body > .card-text {
     padding: 0;
   }
+  /* Bloque izquierdo*/
+  
+  .drawer.drawer-right.show {
+    right: 0;
+    top: 61px;
+    visibility: visible;
+  }
+
+  /* Ads*/
+  #gvm-ads{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #gvm-ads-other{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #gvm-ads-tut, #gvm-ads-tut > a{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  #gvm-ads-tut{
+    margin-bottom: 10px;
+    
+  }
+
+  .gvm-ads-link >img {
+    height: 100px;
+  }
+
+  #gvm-ads-tut > a > img {
+    height: 100px;
+  }
