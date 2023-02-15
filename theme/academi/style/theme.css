@@ -4539,9 +4539,58 @@ body.limitedwidth.pagelayout-frontpage #page.drawers .main-inner {
   }
 
   .gvm-ads-link >img {
-    height: 100px;
+    width: 180px;
   }
 
   #gvm-ads-tut > a > img {
-    height: 100px;
+    width: 210px;
   }
+
+  /**Tutoriales*/
+
+  .gvm-video-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-around;    
+    padding: 25px 5px;
+  }
+
+  .gvm-video-container {
+    width: 400px;
+    height: 280px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gvm-frameVideo {
+    min-height: 75%;
+    min-width: 100%;
+  }
+
+  .gvm-playlists-youtube {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .gvm-playlist-yt-button {
+    width: 280px;
+    height: 60px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+}
